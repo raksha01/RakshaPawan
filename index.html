@@ -174,14 +174,13 @@
   const rsvp = document.getElementById("rsvpLink");
   if (WHATSAPP_NUMBER) {
     const message = encodeURIComponent("Hello Raksha and Pawan! I would love to confirm my attendance.");
-    rsvp.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
+    rsvp.href = `https://wa.me/${+91919849470}?text=${message}`;
     rsvp.target = "_blank";
     rsvp.rel = "noopener";
   } else {
     rsvp.addEventListener("click", event => {
       event.preventDefault();
-      alert("To activate WhatsApp RSVP, add your number to WHATSAPP_NUMBER in index.html.");
-    });
+     });
   }
 
   function updateCountdown() {
